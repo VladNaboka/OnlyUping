@@ -18,7 +18,7 @@ public class PlayerStats : MonoBehaviour
     }
     void Update()
     {
-        appleText.text = "яблок: " + appleScore.ToString();
+        appleText.text = appleScore.ToString();
     }
 
     public void AddApple(int amount)
