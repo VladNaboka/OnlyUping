@@ -1,41 +1,27 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnPlayer : MonoBehaviour
 {
-    [SerializeField] private Vector3 playerPos;
+    public static Vector3 playerSpawnPosition = new Vector3(-0.4f, 6.7f, -0.79f);
+    public Vector3 playerPos;
     public GameObject player;
-    private bool isFirstTime = true;
 
     private void Awake()
     {
-        if (PlayerPrefs.HasKey("HasSceneBeenStarted"))
+        if (PlayerPrefs.HasKey("posY"))
         {
-            isFirstTime = false;
+            Instantiate(player, new Vector3(PlayerPrefs.GetFloat("posX"),
+            PlayerPrefs.GetFloat("posY"), PlayerPrefs.GetFloat("posZ")), Quaternion.identity);
+            //player.transform.position = playerSpawnPosition;
         }
         else
         {
-            PlayerPrefs.SetInt("HasSceneBeenStarted", 1);
-            Instantiate(player, new Vector3(PlayerPrefs.GetFloat("posX"),
-                PlayerPrefs.GetFloat("posY"), PlayerPrefs.GetFloat("posZ")), Quaternion.identity);
-            PlayerPrefs.Save();
+            Instantiate(player, playerSpawnPosition, Quaternion.identity);
         }
-
-        if (isFirstTime)
-        {
-            SetInitialPosition();
-        }
-        
-    }
-
-    private void SetInitialPosition()
-    {
-        PlayerPrefs.SetFloat("posX", playerPos.x);
-        PlayerPrefs.SetFloat("posY", playerPos.y);
-        PlayerPrefs.SetFloat("posZ", playerPos.z);
-        PlayerPrefs.Save();
+        //player.transform.position = new Vector3(PlayerPrefs.GetFloat("posX"),
+        //    PlayerPrefs.GetFloat("posY"), PlayerPrefs.GetFloat("posZ"));
     }
 
     //private void OnTriggerEnter(Collider other)
@@ -55,10 +41,14 @@ public class SpawnPlayer : MonoBehaviour
         Debug.Log("new pos");
         player.transform.position = new Vector3(PlayerPrefs.GetFloat("posX"),
             PlayerPrefs.GetFloat("posY"), PlayerPrefs.GetFloat("posZ"));
+        //player.transform.position = new Vector3(PlayerPrefs.GetFloat("posX"), 
+        //    PlayerPrefs.GetFloat("posY"), PlayerPrefs.GetFloat("posZ"));
     }
     private void Update()
     {
         playerPos = new Vector3(PlayerPrefs.GetFloat("posX"),
             PlayerPrefs.GetFloat("posY"), PlayerPrefs.GetFloat("posZ"));
+        //    playerPos = new Vector3(PlayerPrefs.GetFloat("posX"),
+        //PlayerPrefs.GetFloat("posY"), PlayerPrefs.GetFloat("posZ"));
     }
 }

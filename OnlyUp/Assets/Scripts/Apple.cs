@@ -6,6 +6,12 @@ using DG.Tweening;
 public class Apple : MonoBehaviour
 {
     [SerializeField] private GameObject particleObject;
+    private PlayerStats _playerStats;
+
+    private void Awake()
+    {
+        _playerStats = FindObjectOfType<PlayerStats>();
+    }
 
     private void Start()
     {
@@ -17,6 +23,7 @@ public class Apple : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Instantiate(particleObject, transform.position, Quaternion.identity);
+        _playerStats.AddApple(1);
         Destroy(gameObject);
     }
 }
