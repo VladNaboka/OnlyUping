@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,11 +7,35 @@ public class SpawnPlayer : MonoBehaviour
 {
     [SerializeField] private Vector3 playerPos;
     public GameObject player;
+    private bool isFirstTime = true;
 
     private void Awake()
     {
-        Instantiate(player, new Vector3(PlayerPrefs.GetFloat("posX"),
-            PlayerPrefs.GetFloat("posY"), PlayerPrefs.GetFloat("posZ")), Quaternion.identity);
+        if (PlayerPrefs.HasKey("HasSceneBeenStarted"))
+        {
+            isFirstTime = false;
+        }
+        else
+        {
+            PlayerPrefs.SetInt("HasSceneBeenStarted", 1);
+            Instantiate(player, new Vector3(PlayerPrefs.GetFloat("posX"),
+                PlayerPrefs.GetFloat("posY"), PlayerPrefs.GetFloat("posZ")), Quaternion.identity);
+            PlayerPrefs.Save();
+        }
+
+        if (isFirstTime)
+        {
+            SetInitialPosition();
+        }
+        
+    }
+
+    private void SetInitialPosition()
+    {
+        PlayerPrefs.SetFloat("posX", playerPos.x);
+        PlayerPrefs.SetFloat("posY", playerPos.y);
+        PlayerPrefs.SetFloat("posZ", playerPos.z);
+        PlayerPrefs.Save();
     }
 
     //private void OnTriggerEnter(Collider other)
