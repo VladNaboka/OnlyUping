@@ -12,7 +12,8 @@ public class SpawnPlayer : MonoBehaviour
     {
         if (playerSpawnPosition != null)
         {
-            Instantiate(player, playerSpawnPosition, Quaternion.identity);
+            Instantiate(player, new Vector3(PlayerPrefs.GetFloat("posX"),
+            PlayerPrefs.GetFloat("posY"), PlayerPrefs.GetFloat("posZ")), Quaternion.identity);
             //player.transform.position = playerSpawnPosition;
         }
         //player.transform.position = new Vector3(PlayerPrefs.GetFloat("posX"),
@@ -34,13 +35,15 @@ public class SpawnPlayer : MonoBehaviour
     public void RespawnPlayer()
     {
         Debug.Log("new pos");
-        player.transform.position = playerSpawnPosition;
+        player.transform.position = new Vector3(PlayerPrefs.GetFloat("posX"),
+            PlayerPrefs.GetFloat("posY"), PlayerPrefs.GetFloat("posZ"));
         //player.transform.position = new Vector3(PlayerPrefs.GetFloat("posX"), 
         //    PlayerPrefs.GetFloat("posY"), PlayerPrefs.GetFloat("posZ"));
     }
     private void Update()
     {
-        playerPos = playerSpawnPosition;
+        playerPos = new Vector3(PlayerPrefs.GetFloat("posX"),
+            PlayerPrefs.GetFloat("posY"), PlayerPrefs.GetFloat("posZ"));
     //    playerPos = new Vector3(PlayerPrefs.GetFloat("posX"),
     //PlayerPrefs.GetFloat("posY"), PlayerPrefs.GetFloat("posZ"));
     }

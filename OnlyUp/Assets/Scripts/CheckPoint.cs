@@ -8,7 +8,10 @@ public class CheckPoint : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            SpawnPlayer.playerSpawnPosition = gameObject.transform.position;
+            //SpawnPlayer.playerSpawnPosition = gameObject.transform.position;
+            PlayerPrefs.SetFloat("posX", gameObject.transform.position.x);
+            PlayerPrefs.SetFloat("posY", gameObject.transform.position.y);
+            PlayerPrefs.SetFloat("posZ", gameObject.transform.position.z);
         }
     }
 }
