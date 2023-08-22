@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,5 +17,9 @@ public class SceneController : MonoBehaviour
     public void CloseUI(GameObject objectToClose)
     {
         objectToClose.SetActive(false);
+    }
+    public void OpenURL(string url)
+    {
+        Application.OpenURL(url);
     }
 }
