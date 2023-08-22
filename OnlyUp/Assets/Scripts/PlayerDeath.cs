@@ -10,7 +10,7 @@ public class PlayerDeath : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Death");
-        SceneManager.LoadScene(0, LoadSceneMode.Single);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
         other.GetComponent<SpawnPlayer>().RespawnPlayer();
     }
 }
