@@ -20,35 +20,22 @@ public class SpawnPlayer : MonoBehaviour
         {
             Instantiate(player, playerSpawnPosition, Quaternion.identity);
         }
-        //player.transform.position = new Vector3(PlayerPrefs.GetFloat("posX"),
-        //    PlayerPrefs.GetFloat("posY"), PlayerPrefs.GetFloat("posZ"));
     }
-
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.gameObject.CompareTag("Checkpoint"))
-    //    {
-    //        playerSpawnPosition = other.gameObject.transform.position;
-    //        //PlayerPrefs.SetFloat("posX", other.gameObject.transform.position.x);
-    //        //PlayerPrefs.SetFloat("posY", other.gameObject.transform.position.y);
-    //        //PlayerPrefs.SetFloat("posZ", other.gameObject.transform.position.z);
-    //        //PlayerPrefs.Save();
-    //    }
-    //}
 
     public void RespawnPlayer()
     {
-        Debug.Log("new pos");
         player.transform.position = new Vector3(PlayerPrefs.GetFloat("posX"),
             PlayerPrefs.GetFloat("posY"), PlayerPrefs.GetFloat("posZ"));
-        //player.transform.position = new Vector3(PlayerPrefs.GetFloat("posX"), 
-        //    PlayerPrefs.GetFloat("posY"), PlayerPrefs.GetFloat("posZ"));
+    }
+    public void ResetPos()
+    {
+        PlayerPrefs.SetFloat("posX", 0f);
+        PlayerPrefs.SetFloat("posY", 6.7f);
+        PlayerPrefs.SetFloat("posZ", 0f);
     }
     private void Update()
     {
         playerPos = new Vector3(PlayerPrefs.GetFloat("posX"),
             PlayerPrefs.GetFloat("posY"), PlayerPrefs.GetFloat("posZ"));
-        //    playerPos = new Vector3(PlayerPrefs.GetFloat("posX"),
-        //PlayerPrefs.GetFloat("posY"), PlayerPrefs.GetFloat("posZ"));
     }
 }

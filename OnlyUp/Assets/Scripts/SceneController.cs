@@ -8,6 +8,7 @@ public class SceneController : MonoBehaviour
 {
     public void LoadScene(string name)
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(name);
     }
     public void OpenUI(GameObject objectToOpen)

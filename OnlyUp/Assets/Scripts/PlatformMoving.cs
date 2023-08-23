@@ -15,9 +15,11 @@ public class PlatformMoving : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         other.transform.SetParent(transform);
+        player = other.gameObject;
     }
     private void OnTriggerExit(Collider other)
     {
         other.transform.SetParent(null);
+        player = null;
     }
 }
