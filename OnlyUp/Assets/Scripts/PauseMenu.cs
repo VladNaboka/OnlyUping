@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
 
     private void Awake()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         cameraMove = GameObject.FindGameObjectWithTag("CameraMove");
     }
     private void Update()

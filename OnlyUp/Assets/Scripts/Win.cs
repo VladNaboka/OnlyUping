@@ -8,11 +8,5 @@ public class Win : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         winParticles.SetActive(true);
-        StartCoroutine(winQuit());
-    }
-    IEnumerator winQuit()
-    {
-        yield return new WaitForSeconds(5f);
-        Application.Quit();
     }
 }
