@@ -9,6 +9,8 @@ public class Win : MonoBehaviour
     {
         winParticles.SetActive(true);
         StartCoroutine(winQuit());
+        PlayerPrefs.SetInt("sec", 0);
+        PlayerPrefs.SetInt("min", 0);
     }
     IEnumerator winQuit()
     {
