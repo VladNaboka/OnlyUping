@@ -15,15 +15,23 @@ public class Apple : MonoBehaviour
 
     private void Start()
     {
-        transform.DOMoveY(transform.position.y + 0.5f, 2)
-            .SetEase(Ease.InOutQuad)
-            .SetLoops(-1, LoopType.Yoyo);
+        if (PlayerPrefs.GetInt("apple" + gameObject.name) == 0)
+        {
+            transform.DOMoveY(transform.position.y + 0.5f, 2)
+                        .SetEase(Ease.InOutQuad)
+                        .SetLoops(-1, LoopType.Yoyo);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
     
     private void OnTriggerEnter(Collider other)
     {
         Instantiate(particleObject, transform.position, Quaternion.identity);
         _playerStats.AddApple(1);
+        PlayerPrefs.SetInt("apple" + gameObject.name, 1);
         Destroy(gameObject);
     }
 }
