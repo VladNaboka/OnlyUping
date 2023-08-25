@@ -8,13 +8,5 @@ public class Win : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         winParticles.SetActive(true);
-        StartCoroutine(winQuit());
-        PlayerPrefs.SetInt("sec", 0);
-        PlayerPrefs.SetInt("min", 0);
-    }
-    IEnumerator winQuit()
-    {
-        yield return new WaitForSeconds(5f);
-        Application.Quit();
     }
 }

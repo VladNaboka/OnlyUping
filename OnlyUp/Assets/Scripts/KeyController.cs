@@ -5,6 +5,7 @@ using DG.Tweening;
 
 public class KeyController : MonoBehaviour
 {
+    [SerializeField] private GameObject particleWin;
     private void Start()
     {
         transform.DOMoveY(transform.position.y + 0.5f, 2)
@@ -13,6 +14,7 @@ public class KeyController : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        Instantiate(particleWin, transform.position, Quaternion.identity);
         PlayerPrefs.SetInt("keyTake", 1);
         Destroy(gameObject);
     }

@@ -1,16 +1,17 @@
-using Cinemachine;
 using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuUI;
-    private GameObject cameraMove;
     private bool isPaused = false;
+    private CursorLockMode previousLockMode;
+    private bool previousCursorVisibility;
 
-    private void Awake()
+    private void Start()
     {
-        cameraMove = GameObject.FindGameObjectWithTag("CameraMove");
+        Resume();
     }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -25,20 +26,20 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
-        cameraMove.SetActive(true);
         Time.timeScale = 1f;
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        Cursor.lockState = previousLockMode;
+        Cursor.visible = previousCursorVisibility;
         isPaused = false;
     }
 
     public void Pause()
     {
         pauseMenuUI.SetActive(true);
-        cameraMove.SetActive(false);
         Time.timeScale = 0f;
+        previousLockMode = Cursor.lockState;
+        previousCursorVisibility = Cursor.visible;
+        Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None; 
         isPaused = true;
     }
 }
