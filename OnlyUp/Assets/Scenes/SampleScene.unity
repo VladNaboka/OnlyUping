@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 410087040}
-  m_IndirectSpecularColor: {r: 0.31244037, g: 0.69733465, b: 0.77844375, a: 1}
+  m_IndirectSpecularColor: {r: 0.31243655, g: 0.6973336, b: 0.77844405, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3588,51 +3588,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -572683819200541062, guid: 474aea9dc0eff9246a7770e4636b76ac, type: 3}
---- !u!1 &476825718
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 476825720}
-  - component: {fileID: 476825719}
-  m_Layer: 0
-  m_Name: SoundControler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &476825719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 476825718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6cbc3db1cdfb8342aa5069784bf9ca4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 1816394617}
---- !u!4 &476825720
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 476825718}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 690.34906, y: 346.14447, z: -6.1735687}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 31
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &490375076
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6528,51 +6483,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1383027420755297522, guid: 474aea9dc0eff9246a7770e4636b76ac, type: 3}
---- !u!1 &875204909
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 875204911}
-  - component: {fileID: 875204910}
-  m_Layer: 0
-  m_Name: PauseControler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &875204910
+--- !u!114 &875204910 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4527095885044239243, guid: 79ed9f192daabe544a8a34a0a189f617,
+    type: 3}
+  m_PrefabInstance: {fileID: 4527095885780966053}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 875204909}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3638ab572eb87da4cb5d788257a46843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 1080989211}
---- !u!4 &875204911
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 875204909}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 326.90225, y: 348.53897, z: -0.17300598}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 30
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &883977328
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18006,6 +17928,80 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &244558793845317042
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 244558794312570308, guid: e7c09e1ea0c6bf74d80cf2e472b460f9,
+        type: 3}
+      propertyPath: m_Name
+      value: SoundControler
+      objectReference: {fileID: 0}
+    - target: {fileID: 244558794312570309, guid: e7c09e1ea0c6bf74d80cf2e472b460f9,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1816394617}
+    - target: {fileID: 244558794312570314, guid: e7c09e1ea0c6bf74d80cf2e472b460f9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 244558794312570314, guid: e7c09e1ea0c6bf74d80cf2e472b460f9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 690.34906
+      objectReference: {fileID: 0}
+    - target: {fileID: 244558794312570314, guid: e7c09e1ea0c6bf74d80cf2e472b460f9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 346.14447
+      objectReference: {fileID: 0}
+    - target: {fileID: 244558794312570314, guid: e7c09e1ea0c6bf74d80cf2e472b460f9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.1735687
+      objectReference: {fileID: 0}
+    - target: {fileID: 244558794312570314, guid: e7c09e1ea0c6bf74d80cf2e472b460f9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 244558794312570314, guid: e7c09e1ea0c6bf74d80cf2e472b460f9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 244558794312570314, guid: e7c09e1ea0c6bf74d80cf2e472b460f9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 244558794312570314, guid: e7c09e1ea0c6bf74d80cf2e472b460f9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 244558794312570314, guid: e7c09e1ea0c6bf74d80cf2e472b460f9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 244558794312570314, guid: e7c09e1ea0c6bf74d80cf2e472b460f9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 244558794312570314, guid: e7c09e1ea0c6bf74d80cf2e472b460f9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7c09e1ea0c6bf74d80cf2e472b460f9, type: 3}
 --- !u!1 &247815951560325557
 GameObject:
   m_ObjectHideFlags: 0
@@ -60364,6 +60360,80 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5154007659590262002}
   m_Mesh: {fileID: -8755821428872975456, guid: 474aea9dc0eff9246a7770e4636b76ac, type: 3}
+--- !u!1001 &4527095885780966053
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4527095885044239240, guid: 79ed9f192daabe544a8a34a0a189f617,
+        type: 3}
+      propertyPath: m_Name
+      value: PauseControler
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527095885044239242, guid: 79ed9f192daabe544a8a34a0a189f617,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527095885044239242, guid: 79ed9f192daabe544a8a34a0a189f617,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 326.90225
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527095885044239242, guid: 79ed9f192daabe544a8a34a0a189f617,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 348.53897
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527095885044239242, guid: 79ed9f192daabe544a8a34a0a189f617,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.17300598
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527095885044239242, guid: 79ed9f192daabe544a8a34a0a189f617,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527095885044239242, guid: 79ed9f192daabe544a8a34a0a189f617,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527095885044239242, guid: 79ed9f192daabe544a8a34a0a189f617,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527095885044239242, guid: 79ed9f192daabe544a8a34a0a189f617,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527095885044239242, guid: 79ed9f192daabe544a8a34a0a189f617,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527095885044239242, guid: 79ed9f192daabe544a8a34a0a189f617,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527095885044239242, guid: 79ed9f192daabe544a8a34a0a189f617,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527095885044239243, guid: 79ed9f192daabe544a8a34a0a189f617,
+        type: 3}
+      propertyPath: pauseMenuUI
+      value: 
+      objectReference: {fileID: 1080989211}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79ed9f192daabe544a8a34a0a189f617, type: 3}
 --- !u!33 &4528257481757926981
 MeshFilter:
   m_ObjectHideFlags: 0
