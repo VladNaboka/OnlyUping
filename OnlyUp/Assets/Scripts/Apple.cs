@@ -7,6 +7,8 @@ public class Apple : MonoBehaviour
 {
     [SerializeField] private GameObject particleObject;
     private PlayerStats _playerStats;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip pickupSound;
 
     private void Awake()
     {
@@ -29,9 +31,23 @@ public class Apple : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
+        
+        
+
         Instantiate(particleObject, transform.position, Quaternion.identity);
         _playerStats.AddApple(1);
         PlayerPrefs.SetInt("apple" + gameObject.name, 1);
+        if(audioSource)
+        {
+            //audioSource.Play();
+            AudioSource.PlayClipAtPoint(pickupSound, transform.position);
+            Debug.Log("Play Apple");
+        } else
+        {
+            Debug.Log("Not audioSource");
+        }
+
         Destroy(gameObject);
+
     }
 }

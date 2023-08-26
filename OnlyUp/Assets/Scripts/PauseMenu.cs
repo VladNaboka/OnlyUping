@@ -29,6 +29,10 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         Cursor.lockState = previousLockMode;
         Cursor.visible = previousCursorVisibility;
+
+        GameManager.instance.audioSource.time = GameManager.instance.audioPosition;
+        GameManager.instance.audioSource.Play();
+
         isPaused = false;
     }
 
@@ -40,6 +44,10 @@ public class PauseMenu : MonoBehaviour
         previousCursorVisibility = Cursor.visible;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+
+        GameManager.instance.audioPosition = GameManager.instance.audioSource.time;
+        GameManager.instance.audioSource.Pause();
+
         isPaused = true;
     }
 }

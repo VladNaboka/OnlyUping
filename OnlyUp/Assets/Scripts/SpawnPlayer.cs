@@ -36,6 +36,7 @@ public class SpawnPlayer : MonoBehaviour
     {
         _playerPrefab.transform.position = new Vector3(PlayerPrefs.GetFloat("posX"),
             PlayerPrefs.GetFloat("posY"), PlayerPrefs.GetFloat("posZ"));
+
     }
 
     public void ResetPos()
