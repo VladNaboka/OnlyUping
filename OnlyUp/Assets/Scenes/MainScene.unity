@@ -2104,7 +2104,7 @@ RectTransform:
   - {fileID: 566876915}
   - {fileID: 279853560}
   m_Father: {fileID: 388286641}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2405,8 +2405,8 @@ RectTransform:
   m_Children:
   - {fileID: 1537493353}
   - {fileID: 1928229316}
-  - {fileID: 299644249}
   - {fileID: 1250445350}
+  - {fileID: 299644249}
   m_Father: {fileID: 1434206218}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5165,6 +5165,16 @@ PrefabInstance:
       propertyPath: pauseMenuUI
       value: 
       objectReference: {fileID: 388286640}
+    - target: {fileID: 4527095885044239243, guid: 79ed9f192daabe544a8a34a0a189f617,
+        type: 3}
+      propertyPath: alwaysShowCursor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4527095885044239243, guid: 79ed9f192daabe544a8a34a0a189f617,
+        type: 3}
+      propertyPath: canPauseInThisScene
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79ed9f192daabe544a8a34a0a189f617, type: 3}
 --- !u!1 &1198825677
@@ -5507,7 +5517,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 388286641}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
