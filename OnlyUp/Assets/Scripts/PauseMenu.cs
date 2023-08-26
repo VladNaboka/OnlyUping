@@ -1,9 +1,10 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuUI;
+    public bool alwaysShowCursor;
+
     private bool isPaused = false;
     private CursorLockMode previousLockMode;
     private bool previousCursorVisibility;
@@ -15,32 +16,38 @@ public class PauseMenu : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().buildIndex == 1)
+        if (Input.GetKeyDown(KeyCode.Escape) && CanPauseWithEsc())
         {
             if (isPaused)
                 Resume();
-            else
+            else 
                 Pause();
         }
+    }
+
+    private bool CanPauseWithEsc()
+    {
+
+        string currentSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+
+        if (currentSceneName == "MainScene")
+        {
+            return false;
+        }
+
+        return true;
     }
 
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
-        if (SceneManager.GetActiveScene().buildIndex == 1)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-        }
-        else
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.lockState = previousLockMode;
-            Cursor.visible = previousCursorVisibility;
-        }
+        Cursor.lockState = previousLockMode;
 
-        GameManager.instance.audioSource.time = GameManager.instance.audioPosition;
-        GameManager.instance.audioSource.Play();
+        if (alwaysShowCursor)
+            Cursor.visible = true;
+        else
+            Cursor.visible = false;
 
         isPaused = false;
     }
@@ -51,12 +58,9 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         previousLockMode = Cursor.lockState;
         previousCursorVisibility = Cursor.visible;
-        Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
-        GameManager.instance.audioPosition = GameManager.instance.audioSource.time;
-        GameManager.instance.audioSource.Pause();
-
+        Cursor.lockState = CursorLockMode.None;
         isPaused = true;
     }
 }

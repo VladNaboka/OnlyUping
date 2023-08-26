@@ -1767,6 +1767,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
+    type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
 --- !u!82 &244600890
 AudioSource:
@@ -1970,6 +1972,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
+    type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
 --- !u!82 &249179398
 AudioSource:
@@ -3048,6 +3052,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
+    type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
 --- !u!82 &364476047
 AudioSource:
@@ -3481,6 +3487,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
+    type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
 --- !u!82 &394595218
 AudioSource:
@@ -5010,6 +5018,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
+    type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
 --- !u!82 &579992162
 AudioSource:
@@ -5490,6 +5500,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
+    type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
 --- !u!82 &641855028
 AudioSource:
@@ -6558,6 +6570,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
+    type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
 --- !u!82 &769218181
 AudioSource:
@@ -7986,6 +8000,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
+    type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
 --- !u!82 &946532183
 AudioSource:
@@ -9347,6 +9363,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
+    type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
 --- !u!82 &1139397269
 AudioSource:
@@ -11004,6 +11022,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
+    type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
 --- !u!82 &1337515411
 AudioSource:
@@ -11442,6 +11462,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
+    type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
 --- !u!82 &1374155904
 AudioSource:
@@ -11948,6 +11970,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
+    type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
 --- !u!82 &1433015849
 AudioSource:
@@ -12310,6 +12334,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
+    type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
 --- !u!82 &1467832356
 AudioSource:
@@ -12704,6 +12730,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
+    type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
 --- !u!82 &1529952670
 AudioSource:
@@ -13535,6 +13563,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
+    type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
 --- !u!82 &1617743813
 AudioSource:
@@ -15716,6 +15746,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
+    type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
 --- !u!82 &1904560426
 AudioSource:

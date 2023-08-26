@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CheckPoint : MonoBehaviour
 {
+    [SerializeField] private GameObject checkPointParticle;
     private bool isPassed = false;
     public AudioClip checkpointSound;
 
@@ -19,6 +20,8 @@ public class CheckPoint : MonoBehaviour
         if (other.CompareTag("Player") && !isPassed)
         {
             isPassed = true;
+
+            Instantiate(checkPointParticle, transform.position, Quaternion.identity);
 
             if (checkpointSound != null && audioSource != null)
             {
