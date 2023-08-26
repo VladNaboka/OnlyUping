@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class PauseMenu : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().buildIndex == 1)
         {
             if (isPaused)
                 Resume();
@@ -27,8 +28,16 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
-        Cursor.lockState = previousLockMode;
-        Cursor.visible = previousCursorVisibility;
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.lockState = previousLockMode;
+            Cursor.visible = previousCursorVisibility;
+        }
 
         GameManager.instance.audioSource.time = GameManager.instance.audioPosition;
         GameManager.instance.audioSource.Play();

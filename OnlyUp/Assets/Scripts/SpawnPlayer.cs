@@ -12,6 +12,7 @@ public class SpawnPlayer : MonoBehaviour
 
     private void Awake()
     {
+        //Cursor.lockState = CursorLockMode.Locked;
         DefinePlayerPrefab();
 
         if (PlayerPrefs.HasKey("posY"))
