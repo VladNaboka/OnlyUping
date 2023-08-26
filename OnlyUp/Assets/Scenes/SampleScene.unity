@@ -1767,6 +1767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPassed: 0
   checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
     type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
@@ -1972,6 +1973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPassed: 0
   checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
     type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
@@ -3052,6 +3054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPassed: 0
   checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
     type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
@@ -3487,6 +3490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPassed: 0
   checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
     type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
@@ -5019,6 +5023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPassed: 0
   checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
     type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
@@ -5501,6 +5506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPassed: 0
   checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
     type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
@@ -6571,6 +6577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPassed: 0
   checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
     type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
@@ -8001,6 +8008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPassed: 0
   checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
     type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
@@ -9364,6 +9372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPassed: 0
   checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
     type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
@@ -10502,7 +10511,7 @@ MeshCollider:
   m_GameObject: {fileID: 7783836555531077195}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -11023,6 +11032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPassed: 0
   checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
     type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
@@ -11463,6 +11473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPassed: 0
   checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
     type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
@@ -11971,6 +11982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPassed: 0
   checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
     type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
@@ -12335,6 +12347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPassed: 0
   checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
     type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
@@ -12731,6 +12744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPassed: 0
   checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
     type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
@@ -13564,6 +13578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPassed: 0
   checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
     type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
@@ -15747,6 +15762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a54901bb4147b241b27fe3593ddd60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPassed: 0
   checkPointParticle: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
     type: 3}
   checkpointSound: {fileID: 8300000, guid: 04829463af5117e4891cbfbf5c6a5e24, type: 3}
@@ -106707,6 +106723,7 @@ MonoBehaviour:
   particleWin: {fileID: 1247311384876784, guid: 4adffb0018aeda44e9263f901167af1f,
     type: 3}
   audioSource: {fileID: 8795254075923106515}
+  pickupSound: {fileID: 8300000, guid: b61a23948ddc7c449a2fa3c65269393a, type: 3}
 --- !u!82 &8795254075923106515
 AudioSource:
   m_ObjectHideFlags: 0

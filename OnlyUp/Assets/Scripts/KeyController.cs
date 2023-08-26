@@ -7,6 +7,7 @@ public class KeyController : MonoBehaviour
 {
     [SerializeField] private GameObject particleWin;
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip pickupSound;
 
     private void Start()
     {
@@ -16,9 +17,20 @@ public class KeyController : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+
+        if (audioSource)
+        {
+            //audioSource.Play();
+            AudioSource.PlayClipAtPoint(pickupSound, transform.position);
+            Debug.Log("Play Apple");
+        }
+        else
+        {
+            Debug.Log("Not audioSource");
+        }
+
         Instantiate(particleWin, transform.position, Quaternion.identity);
         PlayerPrefs.SetInt("keyTake", 1);
-        audioSource.Play();
         Destroy(gameObject);
     }
 }
