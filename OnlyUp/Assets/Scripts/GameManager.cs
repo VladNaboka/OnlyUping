@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 
     private int sec = 0;
     private int min = 0;
-    private Text timerText;
+    [SerializeField] private Text timerText;
 
     public bool start = true;
     public bool deletePrefs = false;
