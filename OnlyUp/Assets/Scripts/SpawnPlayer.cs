@@ -10,8 +10,11 @@ public class SpawnPlayer : MonoBehaviour
     public static Vector3 playerSpawnPosition = new Vector3(-0.4f, 6.7f, -0.79f);
     public Vector3 playerPos;
 
+    public static SpawnPlayer instance;
+
     private void Awake()
     {
+        instance = this;
         //Cursor.lockState = CursorLockMode.Locked;
         DefinePlayerPrefab();
 
