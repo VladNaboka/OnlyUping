@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -28,7 +29,7 @@ public class PauseMenu : MonoBehaviour
     private bool CanPauseWithEsc()
     {
 
-        string currentSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        string currentSceneName = SceneManager.GetActiveScene().name;
 
         if (currentSceneName == "MainScene")
         {
@@ -42,7 +43,9 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
-        Cursor.lockState = previousLockMode;
+        //Cursor.lockState = previousLockMode;
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+            Cursor.lockState = CursorLockMode.Locked;
 
         if (alwaysShowCursor)
             Cursor.visible = true;
