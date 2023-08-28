@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SpawnPlayer : MonoBehaviour
 {
     [SerializeField] private CurrentCharacterData _currentCharacterData;
+    private GameObject mobileUI;
     private CharacterData _characterData;
     private GameObject _playerPrefab;
     public static Vector3 playerSpawnPosition = new Vector3(-0.4f, 6.7f, -0.79f);
@@ -18,7 +20,7 @@ public class SpawnPlayer : MonoBehaviour
         //Cursor.lockState = CursorLockMode.Locked;
         DefinePlayerPrefab();
 
-        if (PlayerPrefs.HasKey("posY"))
+        if (PlayerPrefs.HasKey("posY") && SceneManager.GetActiveScene().name == "SampleScene")
         {
             Instantiate(_playerPrefab, new Vector3(PlayerPrefs.GetFloat("posX"),
             PlayerPrefs.GetFloat("posY"), PlayerPrefs.GetFloat("posZ")), Quaternion.identity);

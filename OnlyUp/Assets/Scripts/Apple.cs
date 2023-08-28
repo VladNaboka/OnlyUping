@@ -31,9 +31,6 @@ public class Apple : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        
-        
-
         Instantiate(particleObject, transform.position, Quaternion.identity);
         _playerStats.AddApple(1);
         PlayerPrefs.SetInt("apple" + gameObject.name, 1);

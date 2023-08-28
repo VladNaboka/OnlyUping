@@ -780,6 +780,7 @@ GameObject:
   - component: {fileID: 5553500433752343154}
   - component: {fileID: 2116638278502610174}
   - component: {fileID: 2445894814872545422}
+  - component: {fileID: 3281235574021080053}
   m_Layer: 8
   m_Name: PlayerArmature
   m_TagString: Player
@@ -1023,6 +1024,19 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &3281235574021080053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2445894814872545410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebbfcb7d32ece74439f648af29d0bd0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mobileUI: {fileID: 4687194495109145123}
 --- !u!1 &2483992431025593566
 GameObject:
   m_ObjectHideFlags: 0
@@ -6599,6 +6613,12 @@ PrefabInstance:
 --- !u!224 &1510837220577134125 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 597308369130767402, guid: 2f7f3dde7ae722a4aafffe20691ad702,
+    type: 3}
+  m_PrefabInstance: {fileID: 2070955158608019975}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4687194495109145123 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6751388636123340836, guid: 2f7f3dde7ae722a4aafffe20691ad702,
     type: 3}
   m_PrefabInstance: {fileID: 2070955158608019975}
   m_PrefabAsset: {fileID: 0}

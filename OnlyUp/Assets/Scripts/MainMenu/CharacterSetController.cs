@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterSetController : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class CharacterSetController : MonoBehaviour
 
     public void SetCharacterOnBtnClick()
     {
+        gameObject.GetComponent<Image>().color = Color.green;
         _currentCharacterData.SetCurrentCharacterData(_characterData);
         _currentCharacterData.DoCharacterCallback();
     }
