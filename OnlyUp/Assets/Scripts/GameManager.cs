@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,8 +23,17 @@ public class GameManager : MonoBehaviour
     {
         instance = this;
         timerText = GameObject.Find("TimerText").GetComponent<Text>();
-        sec = PlayerPrefs.GetInt("sec");
-        min = PlayerPrefs.GetInt("min");
+        if (SceneManager.GetActiveScene().name == "SampleScene")
+        {
+            sec = PlayerPrefs.GetInt("sec");
+            min = PlayerPrefs.GetInt("min");
+        }
+        else
+        {
+            sec = PlayerPrefs.GetInt("sec1");
+            min = PlayerPrefs.GetInt("min1");
+        }
+
         audioSource.Play();
 
         StartCoroutine("ITimer");
@@ -42,9 +52,16 @@ public class GameManager : MonoBehaviour
                 }
                 sec += delta;
                 timerText.text = min.ToString("D2") + " : " + sec.ToString("D2");
-
-                PlayerPrefs.SetInt("sec", sec);
-                PlayerPrefs.SetInt("min", min);
+                if (SceneManager.GetActiveScene().name == "SampleScene")
+                {
+                    PlayerPrefs.SetInt("sec", sec);
+                    PlayerPrefs.SetInt("min", min);
+                }
+                else
+                {
+                    PlayerPrefs.SetInt("sec1", sec);
+                    PlayerPrefs.SetInt("min1", min);
+                }
 
                 if (deletePrefs)
                 {

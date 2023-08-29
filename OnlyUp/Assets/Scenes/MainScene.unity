@@ -4069,12 +4069,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 799481831}
         m_TargetAssemblyTypeName: CharacterChooseController, Assembly-CSharp
-        m_MethodName: ChooseCharacterOnBtnClick
-        m_Mode: 1
+        m_MethodName: BuyCharacter
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 100
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7682,8 +7682,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 65.00003, y: -65.00002}
-  m_SizeDelta: {x: 97.1922, y: 104.8615}
+  m_AnchoredPosition: {x: 64, y: -64}
+  m_SizeDelta: {x: 89.53, y: 105.037}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1751367973
 MonoBehaviour:
@@ -8023,8 +8023,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1818619377}
         m_TargetAssemblyTypeName: CharacterChooseController, Assembly-CSharp
-        m_MethodName: ChooseCharacterOnBtnClick
-        m_Mode: 1
+        m_MethodName: BuyCharacter
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
