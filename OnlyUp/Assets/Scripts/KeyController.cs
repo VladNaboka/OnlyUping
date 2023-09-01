@@ -7,6 +7,7 @@ public class KeyController : MonoBehaviour
 {
     [SerializeField] private GameObject particleWin;
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioSource audioSourceWin;
     [SerializeField] private AudioClip pickupSound;
 
     private void Start()
@@ -21,6 +22,7 @@ public class KeyController : MonoBehaviour
         if (audioSource)
         {
             //audioSource.Play();
+            audioSourceWin.Play();
             AudioSource.PlayClipAtPoint(pickupSound, transform.position);
             Debug.Log("Play Apple");
         }
