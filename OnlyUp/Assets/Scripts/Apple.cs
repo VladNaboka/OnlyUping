@@ -10,6 +10,8 @@ public class Apple : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip pickupSound;
 
+    private float audioVolime = 2f;
+
     private void Awake()
     {
         _playerStats = FindObjectOfType<PlayerStats>();
@@ -34,15 +36,19 @@ public class Apple : MonoBehaviour
         Instantiate(particleObject, transform.position, Quaternion.identity);
         _playerStats.AddApple(1);
         PlayerPrefs.SetInt("apple" + gameObject.name, 1);
+        PlayerPrefs.SetInt("appleScore", PlayerPrefs.GetInt("appleScore") + 1);
+
         if(audioSource)
         {
             //audioSource.Play();
+            audioSource.volume *= 5 * audioVolime;
             AudioSource.PlayClipAtPoint(pickupSound, transform.position);
             Debug.Log("Play Apple");
         } else
         {
             Debug.Log("Not audioSource");
         }
+        
 
         Destroy(gameObject);
 

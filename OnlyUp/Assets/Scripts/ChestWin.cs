@@ -13,6 +13,8 @@ public class ChestWin : MonoBehaviour
         if (PlayerPrefs.GetInt("keyTake") == 1)
         {
             StartCoroutine(animChest());
+
+            GameManager.instance.checkGameOver = true;
         }
     }
 
@@ -23,7 +25,8 @@ public class ChestWin : MonoBehaviour
         yield return new WaitForSeconds(1f);
         audioSource.enabled = false;
         yield return new WaitForSeconds(5f);
-        SceneManager.LoadScene(0);
+        
         PlayerPrefs.SetInt("Win1Level", 1);
     }
+
 }
