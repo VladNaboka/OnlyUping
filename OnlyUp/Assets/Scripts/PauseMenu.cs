@@ -51,7 +51,7 @@ public class PauseMenu : MonoBehaviour
             Cursor.visible = true;
         else
             Cursor.visible = false;
-
+        
         isPaused = false;
     }
 

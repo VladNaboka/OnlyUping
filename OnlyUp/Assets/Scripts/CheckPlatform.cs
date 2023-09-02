@@ -7,19 +7,26 @@ using UnityEngine.InputSystem;
 public class CheckPlatform : MonoBehaviour
 {
     public GameObject mobileUI;
-    public PlayerInput plInput;
+    [SerializeField] PlayerInput plInput;
     private void Start()
     {
-        if (Application.platform == RuntimePlatform.IPhonePlayer || Application.platform == RuntimePlatform.Android)
+        if (Application.platform == RuntimePlatform.IPhonePlayer)
         {
             Debug.Log("A");
             mobileUI.SetActive(true);
-            //plInput.uiInputModule = inputSystem;
+            plInput.SwitchCurrentControlScheme("Mobile");
         }
-        else if (Application.platform == RuntimePlatform.WindowsEditor)
+        if(Application.platform == RuntimePlatform.Android)
+        {
+            mobileUI.SetActive(true);
+            plInput.SwitchCurrentControlScheme("Mobile");
+
+        }
+        if (Application.platform == RuntimePlatform.WindowsEditor)
         {
             Debug.Log("D");
             mobileUI.SetActive(false);
         }
+        Debug.Log(Application.platform);
     }
 }
